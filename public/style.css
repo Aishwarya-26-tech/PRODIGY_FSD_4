@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Page */
+.login-body {
+    background: linear-gradient(135deg, #1e1b4b, #4f46e5, #9333ea);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 10px;
+    color: #1e1b4b;
+    font-size: 28px;
+}
+
+.login-container p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.login-container input,
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.login-container button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* Chat Page */
+.chat-body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    height: 100vh;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 290px;
+    background: linear-gradient(180deg, #1e1b4b, #312e81);
+    color: white;
+    padding: 25px 20px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar h2, .sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sidebar ul li {
+    background: rgba(255,255,255,0.12);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.private-box input,
+.private-box button,
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.private-box input {
+    border: 1px solid #ccc;
+}
+
+.private-box button,
+.logout-btn {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.private-box button:hover,
+.logout-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chat-header {
+    background: white;
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.chat-header h2 {
+    color: #1e1b4b;
+}
+
+.chat-box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    overflow-y: auto;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 14px;
+    background: #eef2ff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.system-message {
+    background: #fef3c7;
+    border-left: 5px solid #f59e0b;
+}
+
+.private-message {
+    background: #ede9fe;
+    border-left: 5px solid #7c3aed;
+}
+
+.msg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.msg-header strong {
+    color: #312e81;
+}
+
+.msg-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.msg-text {
+    color: #222;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.typing-status {
+    color: #555;
+    margin: 6px 0 12px;
+    font-style: italic;
+    padding-left: 4px;
+}
+
+.message-form {
+    display: flex;
+    gap: 10px;
+}
+
+.message-form input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.message-form input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.message-form button {
+    padding: 15px 24px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.message-form button:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}

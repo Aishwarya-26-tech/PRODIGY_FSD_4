@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h1>💬 Real-Time Chat App</h1>
+        <p>Join a room and start chatting instantly</p>
+
+        <form id="joinForm">
+            <input type="text" id="username" placeholder="Enter Username" required />
+            <input type="text" id="room" placeholder="Enter Room Name" required />
+            <button type="submit">Join Chat</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("joinForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+            const room = document.getElementById("room").value.trim();
+
+            if (username && room) {
+                localStorage.setItem("username", username);
+                localStorage.setItem("room", room);
+                window.location.href = "chat.html";
+            }
+        });
+    </script>
+</body>
+</html>
